@@ -6,14 +6,31 @@
 //
 
 import UIKit
+import FirebaseAuth
 
 class ViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
+//        Auth.auth().createUser(withEmail: "almenezes912@gmail.com", password: "a1234567"){
+//            authResult, error in
+//            if error == nil {
+//                print("sucesso cadastro")
+//            } else {
+//                print("falha em realizar o cadastro, segue o error: \( error?.localizedDescription ?? "")")
+//            }
+//        }
+//    }
+        Auth.auth().signIn(withEmail: "almenezes912@gmail.com", password: "a1234567"){
+            authResult, error in
+            if error == nil {
+                print("sucesso cadastro")
+            } else {
+                print("falha em realizar o cadastro, segue o error: \( error?.localizedDescription ?? "")")
+            }
+        }
     }
 
-
 }
+
 
