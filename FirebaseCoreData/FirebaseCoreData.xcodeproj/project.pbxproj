@@ -8,6 +8,10 @@
 
 /* Begin PBXBuildFile section */
 		0C79C1319B93699DB533F798 /* Pods_FirebaseCoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7990325CED7D1550FD9AEAC1 /* Pods_FirebaseCoreData.framework */; };
+		38C7726A295B4FBB006C1EF5 /* CustomTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38C77268295B4FBB006C1EF5 /* CustomTableViewCell.swift */; };
+		38C7726B295B4FBB006C1EF5 /* CustomTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 38C77269295B4FBB006C1EF5 /* CustomTableViewCell.xib */; };
+		38C7726E295B5068006C1EF5 /* ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38C7726D295B5068006C1EF5 /* ViewModel.swift */; };
+		38C77271295B5C2B006C1EF5 /* Person.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38C77270295B5C2B006C1EF5 /* Person.swift */; };
 		38FC728F295A53B5001B1A86 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38FC728E295A53B5001B1A86 /* AppDelegate.swift */; };
 		38FC7291295A53B5001B1A86 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38FC7290295A53B5001B1A86 /* SceneDelegate.swift */; };
 		38FC7293295A53B5001B1A86 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38FC7292295A53B5001B1A86 /* ViewController.swift */; };
@@ -19,6 +23,10 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		38C77268295B4FBB006C1EF5 /* CustomTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTableViewCell.swift; sourceTree = "<group>"; };
+		38C77269295B4FBB006C1EF5 /* CustomTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CustomTableViewCell.xib; sourceTree = "<group>"; };
+		38C7726D295B5068006C1EF5 /* ViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModel.swift; sourceTree = "<group>"; };
+		38C77270295B5C2B006C1EF5 /* Person.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Person.swift; sourceTree = "<group>"; };
 		38FC728B295A53B5001B1A86 /* FirebaseCoreData.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FirebaseCoreData.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		38FC728E295A53B5001B1A86 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		38FC7290295A53B5001B1A86 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -46,6 +54,31 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		38C77267295B4FA6006C1EF5 /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				38C77268295B4FBB006C1EF5 /* CustomTableViewCell.swift */,
+				38C77269295B4FBB006C1EF5 /* CustomTableViewCell.xib */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
+		38C7726C295B5056006C1EF5 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				38C7726D295B5068006C1EF5 /* ViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		38C7726F295B5C21006C1EF5 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				38C77270295B5C2B006C1EF5 /* Person.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
 		38FC7282295A53B5001B1A86 = {
 			isa = PBXGroup;
 			children = (
@@ -67,6 +100,9 @@
 		38FC728D295A53B5001B1A86 /* FirebaseCoreData */ = {
 			isa = PBXGroup;
 			children = (
+				38C7726F295B5C21006C1EF5 /* Model */,
+				38C7726C295B5056006C1EF5 /* ViewModel */,
+				38C77267295B4FA6006C1EF5 /* Cell */,
 				38FC728E295A53B5001B1A86 /* AppDelegate.swift */,
 				38FC7290295A53B5001B1A86 /* SceneDelegate.swift */,
 				38FC7292295A53B5001B1A86 /* ViewController.swift */,
@@ -86,7 +122,6 @@
 				CDEAEE9AD25B160F62B2355A /* Pods-FirebaseCoreData.debug.xcconfig */,
 				5B846BDD876408722163B80A /* Pods-FirebaseCoreData.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -161,6 +196,7 @@
 				38FC729E295A53B6001B1A86 /* LaunchScreen.storyboard in Resources */,
 				38FC72A6295B2BF1001B1A86 /* GoogleService-Info.plist in Resources */,
 				38FC729B295A53B6001B1A86 /* Assets.xcassets in Resources */,
+				38C7726B295B4FBB006C1EF5 /* CustomTableViewCell.xib in Resources */,
 				38FC7296295A53B5001B1A86 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -215,8 +251,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				38FC7293295A53B5001B1A86 /* ViewController.swift in Sources */,
+				38C7726A295B4FBB006C1EF5 /* CustomTableViewCell.swift in Sources */,
 				38FC7299295A53B5001B1A86 /* FirebaseCoreData.xcdatamodeld in Sources */,
 				38FC728F295A53B5001B1A86 /* AppDelegate.swift in Sources */,
+				38C77271295B5C2B006C1EF5 /* Person.swift in Sources */,
+				38C7726E295B5068006C1EF5 /* ViewModel.swift in Sources */,
 				38FC7291295A53B5001B1A86 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
